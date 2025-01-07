@@ -1,0 +1,16 @@
+# Ignore virtual environment directory
+Advanced-Fraud-Detection-env/
+
+# Ignore creditcard.csv (or any other sensitive data files)
+creditcard.csv
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore any other files or directories you don't want to track
+*.log
+*.csv
