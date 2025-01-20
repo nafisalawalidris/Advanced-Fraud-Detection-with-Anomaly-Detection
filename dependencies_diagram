@@ -1,0 +1,14 @@
+// Dependencies
+digraph {
+	1 [label="scikit-learn"]
+	2 [label=Pandas]
+	3 [label=NumPy]
+	4 [label=Matplotlib]
+	5 [label=Seaborn]
+	6 [label="TensorFlow/Keras"]
+	1 -> 2
+	2 -> 3
+	3 -> 4
+	4 -> 5
+	5 -> 6
+}
