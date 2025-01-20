@@ -1,14 +1,15 @@
-// Dependencies
-digraph {
-	1 [label="scikit-learn"]
-	2 [label=Pandas]
-	3 [label=NumPy]
-	4 [label=Matplotlib]
-	5 [label=Seaborn]
-	6 [label="TensorFlow/Keras"]
-	1 -> 2
-	2 -> 3
-	3 -> 4
-	4 -> 5
-	5 -> 6
+// Dependency Flowchart
+digraph "Dependencies" {
+	bgcolor=lightblue color=white rankdir=LR style=filled
+	1 [label="scikit-learn" color=gold fontcolor=black shape=ellipse style=filled]
+	2 [label=Pandas color=skyblue fontcolor=black shape=box style=filled]
+	3 [label=NumPy color=lightgreen fontcolor=black shape=parallelogram style=filled]
+	4 [label=Matplotlib color=orange fontcolor=black shape=diamond style=filled]
+	5 [label=Seaborn color=pink fontcolor=black shape=oval style=filled]
+	6 [label="TensorFlow/Keras" color=purple fontcolor=white shape=hexagon style=filled]
+	1 -> 2 [label="Data Preprocessing" color=red style=bold]
+	2 -> 3 [label="Numeric Operations" color=blue style=dashed]
+	3 -> 4 [label="Data Visualization" color=green style=solid]
+	4 -> 5 [label="Advanced Plots" color=orange style=dotted]
+	5 -> 6 [label="Model Training" color=purple style=bold]
 }
