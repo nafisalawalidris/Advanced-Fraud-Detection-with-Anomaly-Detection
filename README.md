@@ -6,7 +6,7 @@
 
 This project focuses on enhancing the sensitivity and accuracy of fraud detection systems by combining supervised learning and anomaly detection techniques. The goal is to identify both known and novel fraud patterns, ensuring that financial institutions can detect fraudulent activities more effectively and reduce losses.
 
-If you find this project useful, please consider giving it a star ⭐ on GitHub. Contributions are also welcome!
+### **If you find this project useful, please consider giving it a star ⭐ on GitHub. Contributions are also welcome!**
 
 ![alt text](<Advanced Fraud Detection with Anomaly Detection API.png>)
 
