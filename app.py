@@ -28,14 +28,31 @@ class TransactionData(BaseModel):
         return v
 
 # Create a FastAPI app
-app = FastAPI()
+app = FastAPI(
+    title="Advanced Fraud Detection API",
+    description="A real-time fraud detection system combining supervised learning and anomaly detection techniques. "
+                "This API predicts whether a transaction is fraudulent based on 30 input features. "
+                "Developed by Nafisa Lawal Idris. "
+                "GitHub: [nafisalawalidris](https://github.com/nafisalawalidris)",
+    version="1.0.0",
+    contact={
+        "name": "Nafisa Lawal Idris",
+        "url": "https://github.com/nafisalawalidris",
+    },
+    license_info={
+        "name": "MIT License",
+        "url": "https://opensource.org/licenses/MIT",
+    },
+)
 
 # Root endpoint
 @app.get("/")
 async def root():
     return {
         "message": "Welcome to the Fraud Detection API!",
-        "usage": "Send a POST request to /predict with transaction data to get a fraud prediction."
+        "usage": "Send a POST request to /predict with transaction data to get a fraud prediction.",
+        "developer": "Nafisa Lawal Idris",
+        "github": "https://github.com/nafisalawalidris",
     }
 
 # Prediction endpoint
@@ -45,10 +62,10 @@ async def predict(transaction: TransactionData, request: Request):
     Predict whether a transaction is fraudulent.
     
     Parameters:
-        transaction: A JSON object containing the transaction features.
+        - **transaction**: A JSON object containing the transaction features (30 features: V1-V28, Amount, Time).
     
     Returns:
-        A JSON object with the prediction (0 for non-fraudulent, 1 for fraudulent).
+        - **prediction**: 0 for non-fraudulent, 1 for fraudulent.
     """
     try:
         # Log the incoming request payload

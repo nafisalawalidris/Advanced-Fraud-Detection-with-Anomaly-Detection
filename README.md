@@ -8,6 +8,8 @@ This project focuses on enhancing the sensitivity and accuracy of fraud detectio
 
 If you find this project useful, please consider giving it a star ⭐ on GitHub. Contributions are also welcome!
 
+![alt text](<Advanced Fraud Detection with Anomaly Detection API.png>)
+
 ---
 
 ## **Objectives**
